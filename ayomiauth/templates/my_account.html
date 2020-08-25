@@ -3,6 +3,8 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<h4>Informations</h4>
+<p>Current email: {{ current_user.email }}</p>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modifyEmailModal">Modify informations</button>
 <div class="modal fade" id="modifyEmailModal" tabindex="-1" role="dialog" aria-labelledby="modifyEmailModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

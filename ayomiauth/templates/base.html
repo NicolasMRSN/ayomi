@@ -32,7 +32,6 @@
                 </ul>
                 {% if user.is_authenticated %}
                 <form class="form-inline my-2 my-lg-0">
-                        <a class="nav-link" href="{% url 'profile'%}">{{ user.email }}</a>
                         <a class="btn btn-outline-danger" href="{% url 'logout' %}">Log out</a>
                 </form>
                 {% else %}
